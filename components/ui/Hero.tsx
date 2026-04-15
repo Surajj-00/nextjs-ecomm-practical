@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
+
+  const brands = [
+    { name: "versace", src: "/brands/versace.png" },
+    { name: "zara", src: "/brands/zara.png" },
+    { name: "gucci", src: "/brands/gucci.png" },
+    { name: "prada", src: "/brands/prada.png" },
+    { name: "calvin-klein", src: "/brands/celvin-klein.png" },
+  ];
+
+
   return (
     <section>
       {/* Hero */}
@@ -82,17 +92,17 @@ export default function Hero() {
 
       {/* Brand logos strip */}
       <div className="bg-black py-5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8 flex-wrap">
-          {["VERSACE", "ZARA", "GUCCI", "PRADA", "Calvin Klein"].map((brand) => (
-            <span
-              key={brand}
-              className={`text-white font-medium tracking-widest select-none ${brand === "GUCCI" || brand === "VERSACE"
-                ? "font-heading text-xl"
-                : "font-heading text-lg"
-                }`}
-            >
-              {brand}
-            </span>
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
+          {brands.map((brand) => (
+            <div key={brand.name} className="relative h-6 w-28">
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                fill
+                sizes="120px"
+                className="object-contain"
+              />
+            </div>
           ))}
         </div>
       </div>
