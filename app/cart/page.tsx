@@ -1,6 +1,7 @@
+'use client'
+
 import CartView from "@/components/cart/CartView";
 import Breadcrumb from "@/components/ui/Breadcrumb";
-import { Link } from "lucide-react";
 
 export default function CartPage() {
   return (
