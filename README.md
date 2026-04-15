@@ -4,6 +4,11 @@ This e-commerce web application built with **Next.js 15**, **TypeScript**, and *
 
 ---
 
+## Live Demo
+ 
+> https://nextjs-ecomm-practical.vercel.app/
+
+ ---
 
 ## Getting Started
 

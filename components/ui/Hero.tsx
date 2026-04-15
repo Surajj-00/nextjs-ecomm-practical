@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="relative h-150 md:h-162.5 flex items-end justify-center overflow-hidden">
             {/* Decorative stars */}
             <Image
-              src='/sm-star.png'
+              src='/icons/sm-star.png'
               alt="sm-star"
               className="absolute top-80 left-12 right-6 z-10"
               width={48}
@@ -61,7 +61,7 @@ export default function Hero() {
             />
 
             <Image
-              src="/heroImg.jpg"
+              src="/images/heroImg.jpg"
               alt="Model wearing Shop.co clothing"
               fill
               className="object-contain object-bottom"
@@ -70,7 +70,7 @@ export default function Hero() {
             />
 
             <Image
-              src='/big-star.png'
+              src='/icons/big-star.png'
               alt="big-star"
               className="absolute top-28 right-6 z-10"
               width={84}

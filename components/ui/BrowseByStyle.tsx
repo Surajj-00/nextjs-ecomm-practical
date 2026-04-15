@@ -43,10 +43,11 @@ export default function BrowseByStyle() {
           {/* Casual */}
           <div className="relative col-span-2 md:col-span-1 h-30 md:h-55 rounded-2xl overflow-hidden bg-white">
             <Image
-              src="/casual.png"
+              src="/images/casual.png"
               alt="Casual"
               fill
               className="object-cover scale-x-[-1]"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <p className="absolute top-5 left-5 text-xl font-semibold text-black">
               Casual
@@ -56,10 +57,11 @@ export default function BrowseByStyle() {
           {/* Formal (Wide) */}
           <div className="relative col-span-2 h-30 md:h-55 rounded-2xl overflow-hidden bg-white">
             <Image
-              src="/formal.png"
+              src="/images/formal.png"
               alt="Formal"
               fill
               className="object-cover scale-x-[-1]"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <p className="absolute top-5 left-5 text-xl font-semibold text-black">
               Formal
@@ -69,10 +71,11 @@ export default function BrowseByStyle() {
           {/* Party (Wide) */}
           <div className="relative col-span-2 h-30 md:h-55 rounded-2xl overflow-hidden bg-white">
             <Image
-              src="/party.png"
+              src="/images/party.png"
               alt="Party"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <p className="absolute top-5 left-5 text-xl font-semibold text-black">
               Party
@@ -82,10 +85,11 @@ export default function BrowseByStyle() {
           {/* Gym */}
           <div className="relative col-span-2 md:col-span-1 h-30 md:h-55 rounded-2xl overflow-hidden bg-white">
             <Image
-              src="/gym.png"
+              src="/images/gym.png"
               alt="Gym"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <p className="absolute top-5 left-5 text-xl font-semibold text-black">
               Gym
