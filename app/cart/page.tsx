@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = "force-dynamic";
+
 import CartView from "@/components/cart/CartView";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
@@ -12,7 +14,7 @@ export default function CartPage() {
           { label: "Cart" }
         ]}
       />
-      
+
       <h1 className="text-5xl font-heading uppercase font-bold text-gray-900 mb-8">Your Cart</h1>
       <CartView />
     </div>
