@@ -7,10 +7,13 @@ import BrowseByStyle from "@/components/ui/BrowseByStyle";
 import TestimonialSection from "@/components/ui/TestimonailSection";
 import Footer from "@/components/ui/Footer";
 
+
+export const revalidate = 60;
+
 export default async function HomePage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; search?: string }>;
+  searchParams: { category?: string; search?: string };
 }) {
   const { category, search } = await searchParams;
 
