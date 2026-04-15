@@ -15,7 +15,7 @@ This e-commerce web application built with **Next.js 15**, **TypeScript**, and *
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Surajj-00/web-engg-assignment.git
+git clone https://github.com/Surajj-00/nextjs-ecomm-practical.git
 cd nextjs-ecommerce
 ```
 
