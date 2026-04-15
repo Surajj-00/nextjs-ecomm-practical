@@ -1,7 +1,6 @@
 'use client'
 
 export const dynamic = "force-dynamic";
-export const revalidate = 0;
 
 import CartView from "@/components/cart/CartView";
 import Breadcrumb from "@/components/ui/Breadcrumb";

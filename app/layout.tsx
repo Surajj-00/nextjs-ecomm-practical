@@ -7,6 +7,7 @@ import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import { CartProvider } from "@/context/CartContext";
 import Footer from "@/components/ui/Footer";
+import { Suspense } from "react";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -32,7 +33,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${bebasNeue.variable} ${dmSans.variable} h-full antialiased`}>
         <CartProvider>
-          <Navbar />
+          <Suspense fallback={null}>
+            <Navbar />
+          </Suspense>
           <main className="min-h-screen bg-gray-50">{children}</main>
           <Footer />
         </CartProvider>
